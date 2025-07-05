@@ -56,29 +56,11 @@ export const HeroSection = () => {
               <CardContent className="p-0">
                 <div className="aspect-[4/3] bg-gradient-to-br from-earth-cream/30 to-earth-warm flex items-center justify-center relative">
                   {/* Supportive women illustration */}
-                  <div className="grid grid-cols-2 gap-8 items-center">
-                    <div className="flex flex-col items-center space-y-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-earth-brown to-earth-brown-light rounded-full flex items-center justify-center warm-glow icon-float">
-                        <Heart className="h-8 w-8 text-white" />
-                      </div>
-                      <div className="text-center">
-                        <div className="text-sm font-medium text-earth-brown px-3 py-1 bg-white/70 rounded-full">
-                          "We Care"
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="flex flex-col items-center space-y-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-earth-brown-light to-earth-brown rounded-full flex items-center justify-center warm-glow icon-float" style={{animationDelay: '0.5s'}}>
-                        <HelpingHand className="h-8 w-8 text-white" />
-                      </div>
-                      <div className="text-center">
-                        <div className="text-sm font-medium text-earth-brown px-3 py-1 bg-white/70 rounded-full">
-                          "We Help"
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/8677b0de-d5cc-49c9-b70c-e0016c2cc6fe.png"
+                    alt="Two women embracing each other showing care and emotional support"
+                    className="w-full h-full object-contain rounded-lg warm-glow max-h-80"
+                  />
                   
                   {/* Floating supportive elements */}
                   <div className="absolute top-6 left-6 w-8 h-8 bg-earth-brown/20 rounded-full flex items-center justify-center icon-float">
