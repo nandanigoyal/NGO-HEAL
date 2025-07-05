@@ -4,6 +4,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Shield, Users, HelpingHand } from "lucide-react";
 
 export const HeroSection = () => {
+  const handleConnectClick = () => {
+    const connectSection = document.getElementById('connect');
+    if (connectSection) {
+      connectSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-earth-warm via-earth-cream/30 to-earth-warm">
       <div className="max-w-6xl mx-auto">
@@ -22,6 +32,7 @@ export const HeroSection = () => {
             <Button 
               size="lg"
               className="bg-earth-brown hover:bg-earth-brown-light text-white px-8 py-4 text-xl font-semibold rounded-xl warm-glow hover:shadow-xl transition-all duration-500 btn-glow"
+              onClick={handleConnectClick}
             >
               <Heart className="mr-2 h-6 w-6 icon-float" />
               Connect Now

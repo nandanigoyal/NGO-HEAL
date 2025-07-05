@@ -14,12 +14,12 @@ export const VolunteerSection = ({ onVolunteerClick }: VolunteerSectionProps) =>
         <Card className="overflow-hidden warm-glow border-0 bg-white/90">
           <CardContent className="p-0">
             <div className="grid lg:grid-cols-2 gap-0 items-stretch">
-              {/* Left side - Volunteer illustration */}
+              {/* Left side - Community illustration */}
               <div className="relative bg-gradient-to-br from-earth-cream/30 to-earth-warm p-8 flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/64cf5242-b8d7-4aa5-b704-9d8ac54487be.png"
-                  alt="Diverse women holding supportive signs together showing community strength"
-                  className="w-full h-full object-cover rounded-lg warm-glow"
+                  src="/lovable-uploads/acf5df28-a7ac-4435-9535-04c217319824.png"
+                  alt="Diverse women holding supportive signs showing unity and care in the community"
+                  className="w-full h-full object-contain rounded-lg warm-glow max-h-96"
                 />
                 
                 {/* Floating supportive elements */}
