@@ -1,11 +1,11 @@
 
-import { ArrowLeft, Droplet, Baby, Shield, House, BellRing, Heart, Users, HelpingHand } from "lucide-react";
+import { ArrowLeft, Droplet, Baby, Shield, House, BellRing, Heart, Users, HelpingHand, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 import { HeroSection } from "@/components/HeroSection";
 import { ConnectCard } from "@/components/ConnectCard";
-import { EmergencyBanner } from "@/components/EmergencyBanner";
+// import { EmergencyBanner } from "@/components/EmergencyBanner";
 import { VolunteerSection } from "@/components/VolunteerSection";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { NGOModal } from "@/components/NGOModal";
@@ -55,7 +55,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-earth-warm">
       {/* Navigation with Go Back Button */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-earth-cream shadow-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-earth-brown shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Button 
@@ -69,8 +69,10 @@ const Index = () => {
             </Button>
             
             <div className="flex items-center space-x-2">
-              <Heart className="h-6 w-6 text-earth-brown" />
-              <span className="font-poppins font-semibold text-xl text-earth-brown">NGO Heal</span>
+              <Building2 className="h-6 w-6 text-earth-brown" />
+              <span className="font-poppins font-bold text-4xl text-earth-brown">NGO Heal </span>
+              
+      --Your Bridge to Support, Health, and Hope.
             </div>
             
             <div className="w-16"></div> {/* Spacer for centering */}
@@ -79,7 +81,7 @@ const Index = () => {
       </nav>
 
       {/* Emergency Banner - Fixed at top */}
-      <EmergencyBanner onEmergencyClick={() => setShowEmergency(true)} />
+      {/* <EmergencyBanner onEmergencyClick={() => setShowEmergency(true)} /> */}
 
       {/* Main Content */}
       <main className="pt-32 pb-20">

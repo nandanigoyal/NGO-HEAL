@@ -54,7 +54,7 @@ export const HeroSection = () => {
           <div className="relative gentle-fade" style={{animationDelay: '0.3s'}}>
             <Card className="overflow-hidden warm-glow border-0">
               <CardContent className="p-0">
-                <div className="aspect-[4/3] bg-gradient-to-br from-earth-cream/30 to-earth-warm flex items-center justify-center relative">
+                <div className=" bg-gradient-to-br from-earth-cream/30 to-earth-warm flex items-center justify-center relative">
                   {/* Supportive women illustration */}
                   <img 
                     src="/lovable-uploads/8677b0de-d5cc-49c9-b70c-e0016c2cc6fe.png"

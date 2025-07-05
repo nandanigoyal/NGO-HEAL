@@ -61,7 +61,7 @@ export const EmergencyModal = ({ isOpen, onClose }: EmergencyModalProps) => {
               <div className="grid sm:grid-cols-2 gap-3">
                 <Button 
                   size="lg"
-                  className="bg-red-600 hover:bg-red-700 text-white font-medium"
+                  className="bg-red-600  text-white font-medium"
                   onClick={() => window.open('tel:1091')}
                 >
                   <Phone className="h-4 w-4 mr-2" />
@@ -102,7 +102,7 @@ export const EmergencyModal = ({ isOpen, onClose }: EmergencyModalProps) => {
                     <div className="flex gap-2">
                       <Button 
                         size="sm"
-                        className={contact.type === 'primary' ? 'bg-red-600 hover:bg-red-700' : 'bg-earth-brown hover:bg-earth-brown-light'}
+                        className={contact.type === 'primary' ? 'bg-red-600 hover:bg-red-700' : 'bg-red-600 hover:bg-earth-brown-light'}
                         onClick={() => window.open(`tel:${contact.number}`)}
                       >
                         <Phone className="h-4 w-4 mr-1" />

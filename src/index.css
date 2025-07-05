@@ -7,29 +7,18 @@
 
 @layer base {
   :root {
-    --background: 254 252 249; /* warm white */
-    --foreground: 107 68 35; /* earth brown */
-
-    --card: 255 255 255;
-    --card-foreground: 107 68 35;
-
-    --popover: 255 255 255;
-    --popover-foreground: 107 68 35;
-
-    --primary: 107 68 35; /* earth brown */
-    --primary-foreground: 254 252 249;
-
-    --secondary: 245 241 235; /* cream */
-    --secondary-foreground: 107 68 35;
-
-    --muted: 245 241 235;
-    --muted-foreground: 139 90 60;
-
-    --accent: 232 221 212; /* cream-dark */
-    --accent-foreground: 107 68 35;
-
-    --destructive: 239 68 68;
-    --destructive-foreground: 254 252 249;
+    --background: #F5F1EB; /* Cream color */
+  --foreground: #9b675c; /* Suitable brown text color */
+  --primary: #6B4423;     /* Earth brown */
+  --primary-foreground: #F5F1EB; /* Cream for text on buttons etc */
+  --secondary: #8B5A3C;
+  --secondary-foreground: #F5F1EB;
+  --accent: #8B5A3C;
+  --accent-foreground: #F5F1EB;
+  --muted: #E8DDD4;
+  --muted-foreground: #4E342E;
+  --destructive: #D14343;
+  --destructive-foreground: #F5F1EB;
 
     --border: 232 221 212;
     --input: 232 221 212;

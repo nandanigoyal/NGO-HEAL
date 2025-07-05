@@ -15,69 +15,75 @@ const ngoData = {
     title: "Menstrual Aid NGOs",
     ngos: [
       {
-        name: "Pad Care Foundation",
-        rating: 4.8,
-        distance: "0.8 km",
-        services: ["Free Sanitary Pads", "Hygiene Education", "Health Camps"],
-        contact: "+91 98765 43210",
-        website: "www.padcare.org",
-        volunteers: 45
-      },
+  "name": "Pad Care Labs",
+  "rating": 4.7,
+  "distance": "approx. 1 km", 
+  "services": ["Sanitary pad disposal bins", "Pad vending machines", "Recycling & awareness"],
+  "contact": "+91 90000 00000 (Delhi office)", 
+  "website": "https://www.padcarelabs.com",
+  "volunteers": 30
+}
+,
       {
-        name: "Red Dot Campaign",
-        rating: 4.9,
-        distance: "1.2 km", 
-        services: ["Menstrual Kits", "Awareness Programs", "School Visits"],
-        contact: "+91 98765 43211",
-        website: "www.reddot.org",
-        volunteers: 62
-      }
+  "name": "Project Red Dot",
+  "rating": 4.6,
+  "distance": "Pan‑India (no fixed office in Indore)", 
+  "services": ["Red Dot disposal bags", "Awareness workshops", "Safe waste handling training"],
+  "contact": "via website contact form",
+  "website": "https://www.projectreddot.com",
+  "volunteers": 50
+}
+
     ]
   },
   maternity: {
     title: "Maternity Help NGOs",
     ngos: [
-      {
-        name: "Mother Care Alliance",
-        rating: 4.7,
-        distance: "0.5 km",
-        services: ["Pregnancy Checkups", "Nutrition Support", "Maternity Kits"],
-        contact: "+91 98765 43212",
-        website: "www.mothercare.org",
-        volunteers: 38
-      },
-      {
-        name: "New Life Foundation",
-        rating: 4.8,
-        distance: "1.5 km",
-        services: ["Pre/Post Natal Care", "Counseling", "Emergency Support"],
-        contact: "+91 98765 43213", 
-        website: "www.newlife.org",
-        volunteers: 29
-      }
+     {
+  "name": "Urban Health Resource Centre",
+  "rating": 4.7,
+  "distance": "0.2 km",
+  "services": ["Maternal & Infant Care", "Community Health Groups", "Nutrition & Hygiene Education"],
+  "contact": "via website contact form",
+  "website": "http://www.uhrc.in",
+  "volunteers": 50
+}
+,
+     {
+  "name": "PAHAL Jan Sahayog Vikas Sansthan",
+  "rating": 4.6,
+  "distance": "Indore region",
+  "services": ["Women & Child Health Camps", "Gender‑based Workshops", "Livelihood & Nutrition"],
+  "contact": "via website/aboutus page",
+  "website": "https://pahalindore.org",
+  "volunteers": 40
+}
+
     ]
   },
   crisis: {
     title: "Crisis Support NGOs",
     ngos: [
       {
-        name: "Safe Haven Support",
-        rating: 4.9,
-        distance: "24/7 Available",
-        services: ["Crisis Counseling", "Legal Aid", "Emergency Shelter"],
-        contact: "+91 98765 43214",
-        website: "www.safehaven.org",
-        volunteers: 78
-      },
+  "name": "Mahila Utkarsh Sansthan",
+  "rating": 4.6,
+  "distance": "within Indore",
+  "services": ["24×7 Crisis Management Centre", "Temporary Shelter", "Legal & Medical Aid", "Psychological Counselling"],
+  "contact": "via district Women & Child Development Office",
+  "website": "https://mahilautkarshsansthan.org",
+  "volunteers": 378
+}
+,
       {
-        name: "Women's Emergency Network",
-        rating: 4.8,
-        distance: "Immediate Response",
-        services: ["Hotline Support", "Rescue Operations", "Rehabilitation"],
-        contact: "+91 98765 43215",
-        website: "www.emergencynet.org", 
-        volunteers: 92
-      }
+  "name": "Initiative of Cahnge",
+  "rating": 4.7,
+  "distance": "Indore city",
+  "services": ["Free Legal Aid for Women", "Kanoon Sakhi Support Groups", "Court & Protection Officer Liaison", "Judicial Awareness"],
+  "contact": "via Rajendra Bandhu office, Indore",
+  "website": "https://rajendrabandhu.com",
+  "volunteers": 400
+}
+
     ]
   },
   shelter: {
@@ -132,7 +138,7 @@ export const NGOModal = ({ isOpen, onClose, cardType }: NGOModalProps) => {
                         {ngo.name}
                       </h3>
                       <div className="flex items-center gap-1">
-                        <Star className="h-4 w-4 text-yellow-500 fill-current" />
+                        <Star className="h-4 w-4 text-brown-500 fill-current" />
                         <span className="font-medium text-earth-brown">{ngo.rating}</span>
                       </div>
                     </div>

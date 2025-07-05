@@ -67,7 +67,7 @@ export default {
 				earth: {
 					brown: '#6B4423',
 					'brown-light': '#8B5A3C',
-					cream: '#F5F1EB',
+					cream: "#FDF7F2",
 					'cream-dark': '#E8DDD4',
 					warm: '#FEFCF9'
 				}
