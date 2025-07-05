@@ -1,5 +1,5 @@
 
-import { ArrowLeft, Droplet, Baby, Shield, House, BellRing, Heart, Users, HelpingHand, Building2 } from "lucide-react";
+import { ArrowLeft, Droplet, Baby, Shield, House, BellRing, Heart, Users, HelpingHand, Building2,MapPin, HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
@@ -38,7 +38,7 @@ const Index = () => {
       id: "crisis",
       title: "Crisis Support", 
       description: "Immediate help for abuse, harassment & mental health",
-      icon: Shield,
+      icon: HeartHandshake,
       color: "from-orange-400 to-red-500",
       bgColor: "bg-orange-50 hover:bg-orange-100"
     },
@@ -123,7 +123,7 @@ const Index = () => {
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-earth-cream/30">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-earth-brown rounded-full mb-6">
-              <Shield className="h-8 w-8 text-white" />
+              <MapPin className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-earth-brown mb-4 font-poppins">
               Your Location & Data is Secure

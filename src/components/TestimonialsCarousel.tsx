@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Shield, Users, HelpingHand } from "lucide-react";
+import { Heart, Users, HelpingHand, HeartHandshakeIcon, Droplet, Baby, HeartPulse, PhoneCall } from "lucide-react";
 
 export const TestimonialsCarousel = () => {
   const testimonials = [
@@ -16,7 +16,7 @@ export const TestimonialsCarousel = () => {
       location: "Delhi", 
       text: "The crisis support team helped me find courage and connected me to legal aid. I'm safe now because of them.",
       type: "crisis",
-      icon: Shield
+      icon: PhoneCall
     },
     {
       name: "Meera R.",
@@ -28,9 +28,9 @@ export const TestimonialsCarousel = () => {
   ];
 
   const partnerLogos = [
-    { name: "Women's Safety Foundation", icon: Shield },
-    { name: "Menstrual Health Alliance", icon: Heart },
-    { name: "Maternity Care Network", icon: Users },
+    { name: "Women's Safety Foundation", icon: HeartHandshakeIcon },
+    { name: "Menstrual Health Alliance", icon: Droplet },
+    { name: "Maternity Care Network", icon: Baby },
     { name: "Crisis Support India", icon: HelpingHand }
   ];
 
