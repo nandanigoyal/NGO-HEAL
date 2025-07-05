@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Star, Users, Shield } from "lucide-react";
+import { Heart, Shield, Users, HelpingHand } from "lucide-react";
 
 export const TestimonialsCarousel = () => {
   const testimonials = [
@@ -31,14 +31,14 @@ export const TestimonialsCarousel = () => {
     { name: "Women's Safety Foundation", icon: Shield },
     { name: "Menstrual Health Alliance", icon: Heart },
     { name: "Maternity Care Network", icon: Users },
-    { name: "Crisis Support India", icon: Star }
+    { name: "Crisis Support India", icon: HelpingHand }
   ];
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Testimonials */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 gentle-fade">
           <h2 className="text-3xl sm:text-4xl font-bold text-earth-brown mb-4 font-poppins">
             Real Stories, Real Impact
           </h2>
@@ -53,12 +53,12 @@ export const TestimonialsCarousel = () => {
             return (
               <Card 
                 key={index} 
-                className="bg-white shadow-lg border-0 hover:shadow-xl transition-shadow duration-300 animate-fade-in"
+                className="bg-white warm-glow border-0 hover:shadow-xl transition-all duration-500 gentle-fade card-hover"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-br from-earth-brown to-earth-brown-light rounded-full flex items-center justify-center mr-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-earth-brown to-earth-brown-light rounded-full flex items-center justify-center mr-3 icon-float">
                       <Icon className="h-5 w-5 text-white" />
                     </div>
                     <div>
@@ -67,13 +67,13 @@ export const TestimonialsCarousel = () => {
                     </div>
                   </div>
                   
-                  <p className="text-earth-brown/80 italic leading-relaxed">
+                  <p className="text-earth-brown/80 italic leading-relaxed mb-4">
                     "{testimonial.text}"
                   </p>
                   
-                  <div className="flex items-center mt-4 text-yellow-500">
+                  <div className="flex items-center text-earth-brown">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-current" />
+                      <Heart key={i} className="h-4 w-4 fill-current mr-1" />
                     ))}
                   </div>
                 </CardContent>
@@ -83,7 +83,7 @@ export const TestimonialsCarousel = () => {
         </div>
 
         {/* Partner Logos */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 gentle-fade">
           <h3 className="text-2xl font-bold text-earth-brown mb-4 font-poppins">
             Trusted Partners
           </h3>
@@ -98,10 +98,11 @@ export const TestimonialsCarousel = () => {
             return (
               <Card 
                 key={index}
-                className="bg-white/50 border-0 hover:bg-white hover:shadow-md transition-all duration-300 cursor-pointer"
+                className="bg-earth-cream/50 border-0 hover:bg-white hover:shadow-md transition-all duration-500 cursor-pointer card-hover gentle-fade"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-earth-brown/20 to-earth-brown/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-earth-brown/20 to-earth-brown/10 rounded-full flex items-center justify-center mx-auto mb-3 icon-float">
                     <Icon className="h-6 w-6 text-earth-brown" />
                   </div>
                   <div className="text-sm font-medium text-earth-brown">

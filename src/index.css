@@ -65,14 +65,27 @@
 
 @layer components {
   .card-hover {
-    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl hover:shadow-earth-brown/10;
+    @apply transition-all duration-500 hover:transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-earth-brown/20;
   }
   
   .btn-glow {
-    @apply transition-all duration-300 hover:shadow-lg hover:shadow-earth-brown/30;
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-earth-brown/40;
   }
   
   .text-gradient {
     @apply bg-gradient-to-r from-earth-brown to-earth-brown-light bg-clip-text text-transparent;
+  }
+
+  .gentle-fade {
+    @apply animate-fade-in opacity-0;
+    animation-fill-mode: forwards;
+  }
+
+  .icon-float {
+    @apply animate-float;
+  }
+
+  .warm-glow {
+    @apply shadow-lg shadow-earth-brown/30;
   }
 }
